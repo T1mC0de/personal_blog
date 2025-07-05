@@ -10,7 +10,7 @@ This project is a personal blog application that allows users to view, create, e
   
     ```bash
     git clone git@github.com:T1mC0de/personal_blog.git
-    cd personal-blog
+    cd personal_blog
     ```
 
 2. Install dependencies:
@@ -32,7 +32,7 @@ This project is a personal blog application that allows users to view, create, e
 ## 📚 API
   
    This section documents the main routes of the application. Each route is described with its parameters and examples.
-   
+
 
 ## Inspired by
 inspired by https://roadmap.sh/projects/personal-blog
