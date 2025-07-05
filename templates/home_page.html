@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Personal blog{% endblock title %}
+
+{% block heading %}
+    <h1>Personal blog</h1>
+    <a href="/article"> create new article </a>
+{% endblock heading %}
+
+{% block content %}
+    {% if articles %}
+        {% for article in articles %}
+            <a href="/article/{{loop.index0}}">{{article.title}}</a> 
+            {{article.date}}
+            <a href="/delete_article/{{loop.index0}}" onclick="return confirm('Are you sure')">delete</a>
+            <a href="/edit_article/{{loop.index0}}">edit</a>
+            <br>
+        {% endfor %}
+    {% else %}
+        <p>No articles yet</p>
+    {% endif %}
+{% endblock content %}
