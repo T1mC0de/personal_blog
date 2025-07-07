@@ -9,7 +9,7 @@ This project is a personal blog application that allows users to view, create, e
 1. Clone the repository in the current working directore:
   
     ```bash
-    git clone git@github.com:T1mC0de/personal_blog.git
+    git clone https://github.com/T1mC0de/personal_blog.git
     cd personal_blog
     ```
 
@@ -31,8 +31,36 @@ This project is a personal blog application that allows users to view, create, e
 
 ## 📚 API
   
-   This section documents the main routes of the application. Each route is described with its parameters and examples.
+   This section documents the main routes of the application. Each route is described with its parameters.
 
+### `GET /` or  `GET /home`
+  
+    Displays the home page with a list of articles.
+
+### `GET /article`
+  
+    Displays the creating page.
+
+
+### `GET /article/<int:id>`
+  
+    Displays the article by id.
+
+### `POST /submit_article`
+  
+    Submits article on the server.
+
+### `GET /delete_article/<int:id>`
+  
+    Deletes article by id.
+
+### `GET /edit_article/<int:id>`
+  
+    Displays the editing page.
+
+### `POST /save/<string:article_title>`
+  
+    Saves changes on the server.
 
 ## Inspired by
 inspired by https://roadmap.sh/projects/personal-blog
